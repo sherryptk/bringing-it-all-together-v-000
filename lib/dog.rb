@@ -41,7 +41,8 @@ class Dog
     self
   end
 
-  def self.create(name:, breed:)
+  def self.create(attributes)
+  attributes.each {|key, value| self.send(("#{key}="), value)}
    dogs = Student.new(name, breed)
    dogs.save
    dogs
