@@ -42,7 +42,6 @@ class Dog
   end
 
   def self.create(attributes)
-    binding.pry
 
   attributes.each {|key, value| send(("#{key}="), value)}
    dogs = Student.new(name, breed)
