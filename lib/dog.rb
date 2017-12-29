@@ -42,7 +42,7 @@ class Dog
   end
 
   def self.create(attributes)
-    dogs = Dog.new(attributes.each {|key, value| (key: value)})
+    dogs = Dog.new(attributes)
    dogs.save
    dogs
  end
