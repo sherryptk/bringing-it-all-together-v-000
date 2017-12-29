@@ -43,6 +43,7 @@ class Dog
 
   def self.create(attributes)
   attributes.each {|key, value| self.send(("#{key}="), value)}
+  binding.pry
    dogs = Student.new(name, breed)
    dogs.save
    dogs
