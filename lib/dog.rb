@@ -43,8 +43,8 @@ class Dog
 
   def self.create(attributes)
     dogs = Dog.new(attributes)
-   dogs.save
-   dogs
+    dogs.save
+    dogs
  end
 
 end
